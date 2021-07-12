@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* First movile */
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+main {
+	flex-grow: 1;
+}
+
+.titulares {
+	padding: 1rem;
+	background-color: #222;
+	color: #EEE;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+/* Quitar puntos a las listas ul */
+
+.menu ul {
+	list-style-type: none;
+}
+
+.hero-image {
+	min-height: 100vh;
+	background-image: url("https://placeimg.com/1280/720/animals");
+	background-repeat: no-repeat;
+	color: #FFF;
+}
+
+.hero-image div {
+	/* Herede la altura de la hero-image */
+	min-height: inherit;
+	/* Para centrar la h2 con flexbox como solo es un solo elemento no nos preocupamos de la direccion*/
+	display: flex;
+	/* centrarlo en el eje transversal y horizontal */
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .75);
+}
+
+.hero-image h1 {
+	font-size: 5vw;
+}
+
+.flex-responsive {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-responsive-item {
+	border: thin solid #F60;
+	flex: 1 1 200px;
+}
+
+/* Mediaquery cuando la pantalla tenga una anchura minima de 1024px() */
+@media screen and (min-width: 1024px) {
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.menu ul {
+		display: flex;
+	}
+
+	.menu li {
+		padding: .5rem;
+	}
+
+	.flex-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.flex-item {
+		flex: 0 0 50%;
+	}
+
+	/* Para invertir los elementos desde el elemneto hijo */
+	.flex-order-1 {
+		order: 1;
+	}
+
+	/* Para invertir los elementos desde el elemneto padre */
+	.flex-row-reverse {
+		flex-direction: row-reverse;
+	}
+}
