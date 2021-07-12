@@ -85,3 +85,9 @@ El primer valor enlistado en cada propiedad es el que toman por defecto.
 
 - __align-self:__ Sobreescribe el valor de la propiedad align-items sólo para el elemento hijo especificado.
   - `align-self: stretch | flex-start | flex-end | center | baseline;`
+
+# EJERCICIO PRACTICO
+
+## Maquetación y Responsive Design
+
+Ejemplo de maquetación y responsive design artesanal con Flexbox y con el framework Bootstrap
