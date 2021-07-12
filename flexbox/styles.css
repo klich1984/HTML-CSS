@@ -1,0 +1,81 @@
+/* reseteo de cajas para que considere el modelo de caja desde el borde */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+.container {
+	background-color: #333;
+	height: 30vh;
+	/* display: flex | inline-block; */
+	display: flex;
+	/* flex-direction: row | row-reverse | column | column-reverse; */
+	flex-direction: row;
+	/* flex-wrap: nowrap | wrap | wrap-reverse; */
+	/* fflex-flow: flex-direction flex-wrap; */
+	flex-flow: row wrap;
+	/* justify-content: flex-start | center | flex-end | space-between | space-around | space-evenly; */
+	justify-content: flex-start;
+	/* align-items: stretch | flex-start | flex-end | center | baseline; */
+	align-items: baseline;
+}
+
+.item {
+	/* borde think: grueso, tin: delgado solido y de color #999 */
+	border: medium solid #999;
+	/* width: 20%;
+	height: 20%; */
+	background-color: #666;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+}
+
+/* .item:nth-child(2),
+.item:nth-child(17) {
+	font-size: 250%;
+} */
+
+.container-children {
+	/* Valores por defecto */
+	background-color: #333;
+	height: 30vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: flex-start;
+}
+
+.item-children {
+	/* borde think: grueso, tin: delgado solido y de color #999 */
+	border: medium solid #999;
+	/* width: 20%;
+	height: 20%; */
+	background-color: #666;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	flex-basis: 150px;
+	flex: 0 1 auto;
+	order: 0;
+	align-self: stretch;
+}
+
+.item-children:nth-child(2) {
+	/* flex-grow: 2; */
+	order: -1;
+}
+
+.item-children:nth-child(3) {
+	/* flex-grow: 2; */
+	align-self: flex-start;
+}
+
+.item-children:nth-child(5) {
+	/* flex-grow: 2; */
+	align-self: flex-end;
+}
