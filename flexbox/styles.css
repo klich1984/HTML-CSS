@@ -1,0 +1,52 @@
+/* Restart Box-sizing */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+.container {
+	/* margin auto para que cuando sea mas de 1200 se centre */
+	margin: auto;
+	max-width: 1200px;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-item {
+	background-color: darkcyan;
+	border: thin solid #CCC;
+	flex: 0 0 100%;
+}
+
+/* mediaquery small en Bootstrap */
+@media (min-width: 576px) {
+	.flex-item {
+		/* a dos columnas por eso ocupan el 50% */
+		flex: 0 0 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	.flex-item {
+		/* a tres columnas por eso ocupan el 33.33% (100/3)*/
+		flex: 0 0 33.33333333333333%;
+	}
+}
+
+@media (min-width: 992px) {
+	.flex-item {
+		/* a cuatro columnas por eso ocupan el 25% (100/4)*/
+		flex: 0 0 25%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.flex-item {
+		/* a 6 columnas por eso ocupan el 16.6666666666667% (100/6)*/
+		flex: 0 0 16.6666666666667%;
+	}
+}
