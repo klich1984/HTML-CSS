@@ -58,3 +58,38 @@ img {
 	background-color: #666;
 	border: medium solid #999;
 }
+
+.grid-explicit {
+	/* Para indicar que trabajamos con grid */
+	display: grid;
+	/* Cuadricula de 3 columnas x 3 filas */
+	/* grid-template-columns o row me permite definir columnas y filas
+		los valores se ingresan separados por espacio y recive cualquier tipo de medida
+		1fr = el espacio sobrante
+		Los items que queden por fuera de nuestra seleccion ( no estan definidas > 9 items en este ejemplo de 3 * 3)
+		las filas tomaran un valor por defecto */
+	grid-template-rows: 2rem 20vh 30%;
+	grid-template-columns: 50% 100px 1fr;
+	/* Grid de 5c * 4f */
+	grid-template-rows: repeat(4, auto);
+	grid-template-rows: repeat(4, 25%);
+	grid-template-columns: repeat(5, 20%);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
+	/* Grid 4c * 5f */
+	grid-template-columns: 20% 30% 30% 20%;
+	/* Optimizado */
+	grid-template-columns: 20% repeat(2, 30%) 20%;
+	grid-template-rows: repeat(5, auto);
+	/* Para dar espaciado entre las columnas usamos grid-row/column-gap (esta depreciada) se debe considerar
+		el tamaño y se simplifican en grid grap*/
+		grid-column-gap: 2rem;
+		grid-row-gap: 2rem;
+		/* Shorcut primer valor filas y segundo valor columna */
+		grid-gap: 4rem 2rem;
+		/* Sus nombres actuales son */
+		column-gap: 100px;
+		row-gap: 1rem;
+		gap: 0 3rem;
+
+}
