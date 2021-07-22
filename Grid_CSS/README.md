@@ -23,3 +23,7 @@ Asi que __Grid CSS__ no remplaza a __Flexbox__, lo complementa y ambas herramien
 -  Celda de Cuadricula (Grid Cell)
 -  Área de Cuadricula (Grid Area)
 
+### GRID EXPLICITA
+
+Hay varias maneras de definir una grid y una de ellas es la grid explicita, donde definimos __explicitamente__ el numero filas y el numero de columnas que nuestra grid va a tener.
+
