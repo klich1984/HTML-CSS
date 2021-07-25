@@ -176,3 +176,15 @@ img {
 	/* Para definir un nombre de area, como ya defini el nombre en grid-template-areas lo coloco sin commillas y como lo llame allí */
 	grid-area: footer;
 }
+
+/* grid 4c * 3f - para 12 items del 13 al 19 ya no estan en mi grid explicita ej instagram, sirve para contenido dinamico*/
+.grid-implicit {
+	width: 40%;
+	display: grid;
+	/* Para que los elementos contenedores compartan el mismo espacio (en la misma linea)*/
+	display: inline-grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 200px);
+	/* Los items que quede en la grid implicita toman el alto de su contenido por que tienen el valor auto*/
+
+}

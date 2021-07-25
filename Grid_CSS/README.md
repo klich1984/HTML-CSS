@@ -34,3 +34,7 @@ Podemos darle nombre (Personalizar el nombre de las lineas) a cada una de las li
 ### GRID AREAS
 
 Podemos asignar nombres a las areas y realizar regiones con areas.
+
+### Grid IMPLICITAS
+
+El navegador definira la grid si se desborda los elementos que no defino en mi grid explicira.
