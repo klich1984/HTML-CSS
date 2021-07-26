@@ -42,3 +42,14 @@ El navegador definira la grid si se desborda los elementos que no defino en mi g
 ### Flujo de la Grid
 
 Se puede cambiar el flujo de filas (por defecto) a u flujo de column con la propiedad grid-auto-flow y grid-auto-row/column
+
+### Superposicion
+
+Util a la hora de posicionar elementos encima de otros
+
+### Ordenamiento
+
+Para ordenar los elementos hijos de nuestra grid
+
+### Ordenamiento de tracks
+
