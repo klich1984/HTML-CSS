@@ -38,3 +38,7 @@ Podemos asignar nombres a las areas y realizar regiones con areas.
 ### Grid IMPLICITAS
 
 El navegador definira la grid si se desborda los elementos que no defino en mi grid explicira.
+
+### Flujo de la Grid
+
+Se puede cambiar el flujo de filas (por defecto) a u flujo de column con la propiedad grid-auto-flow y grid-auto-row/column

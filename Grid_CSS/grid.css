@@ -188,3 +188,36 @@ img {
 	/* Los items que quede en la grid implicita toman el alto de su contenido por que tienen el valor auto*/
 
 }
+
+.grid-flow {
+	display: grid;
+	/* grid de 5c * 3f */
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(3, 150px);
+	/* determina el flujo que va a seguir mi cuadricula */
+	grid-auto-flow: row;
+	/* Define el tamaño de la cuadricula implicita */
+	grid-auto-rows: 100px;
+	/* Los items se acomodan en columnas y los que quede por fuera de mi grid explicita se generan columnas la grid implicita*/
+	/* Se puede pensar como voltear el celuular a horizontal */
+	grid-auto-flow: column;
+	/* Define el tamaño de la cuadricula implicita */
+	grid-auto-columns: 50px;
+}
+
+.grid-flow-dense {
+	display: grid;
+		/* grid de 5c * 4f */
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 200px);
+	/* Para rellenar los espacios vacios */
+	grid-auto-flow: column dense;
+	grid-auto-flow: row dense;
+}
+
+.grid-flow-dense .item.item:nth-child(9) {
+	color: cyan;
+	/* Por su ubicacion se desplaza hacia abajo */
+	grid-row: span 3;
+	grid-column: span 3;
+}
