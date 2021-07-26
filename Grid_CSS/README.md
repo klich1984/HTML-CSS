@@ -47,9 +47,10 @@ Se puede cambiar el flujo de filas (por defecto) a u flujo de column con la prop
 
 Util a la hora de posicionar elementos encima de otros
 
-### Ordenamiento
+### Ordenamiento y Ordenamiento de tracks
 
 Para ordenar los elementos hijos de nuestra grid
 
-### Ordenamiento de tracks
+### Patrones repetitivos
 
+Generar patrones repetitivos que permiten automatizar el número de elemntos que queremos mostrar.
